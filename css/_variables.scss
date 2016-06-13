@@ -1,0 +1,27 @@
+$color: #fff;
+$bgrPrimary: #286090;
+$bdPrimary: #204d74;
+$bgrSuccess: #449d44;
+$bdSuccess: #398439;
+@mixin btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+@mixin style($bground-color, $border-color){
+  background-color: $bground-color;
+  border-color: $border-color;
+}
+@mixin btnPaddings($padding...){
+  padding: $padding;
+}

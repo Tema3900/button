@@ -1,0 +1,70 @@
+@import "_variables.scss";
+.button{
+  @include btn;
+
+  &-default{
+    color: #333;
+    background-color: $color;
+    border-color: #ccc;
+
+    &:hover,:focus {
+      background-color: #e0e0e0;
+      background-position: 0 -15px;
+    }
+    &:active{
+      @include style(#e0e0e0, #dbdbdb);
+    }
+  }
+  &-primary {
+    @include style(#337ab7, #2e6da4);
+    color: $color;
+
+    &:focus{
+      @include style($bgrPrimary, #122b40);
+      color:$color;
+    }
+    &:hover {
+      @include style($bgrPrimary, $bdPrimary);
+      color:$color;
+    }
+    &:active {
+      @include style($bgrPrimary, $bdPrimary);
+      color: $color;
+    }
+  }
+  &-success {
+    @include style(#5cb85c, #5cb85c);
+    color: $color;
+
+    &:focus{
+      @include style($bgrSuccess, #255625);
+      color: $color;
+    }
+    &:hover {
+      @include style($bgrSuccess, $bdSuccess);
+      color: $color;
+    }
+    &:active{
+      @include style($bgrSuccess, $bdSuccess);
+      color: $color;
+    }
+  }
+  &-lg {
+    @include btnPaddings(10px, 16px);
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+  }
+  &-sm{
+    @include btnPaddings(5px, 10px);
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+  &-xs{
+    @include btnPaddings(1px, 5px);
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+}
