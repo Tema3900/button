@@ -1,0 +1,25 @@
+{
+  "name": "button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "preproduction": "npm run cleanup",
+    "production": "sass css/scss/style.scss css/build/style.css --style=compressed --sourcemap=none",
+
+    "development": "npm run cleanup && sass --watch css/scss:css/build --style=expanded",
+
+    "cleanup": "rm -rf css/build/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tema3900/button.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tema3900/button/issues"
+  },
+  "homepage": "https://github.com/Tema3900/button#readme"
+}
