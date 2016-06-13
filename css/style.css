@@ -1,1 +1,73 @@
-@import "_button.scss";
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .button-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc; }
+    .button-default:hover, .button-default :focus {
+      background-color: #e0e0e0;
+      background-position: 0 -15px; }
+    .button-default:active {
+      background-color: #e0e0e0;
+      border-color: #dbdbdb; }
+  .button-primary {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #fff; }
+    .button-primary:focus {
+      background-color: #286090;
+      border-color: #122b40;
+      color: #fff; }
+    .button-primary:hover {
+      background-color: #286090;
+      border-color: #204d74;
+      color: #fff; }
+    .button-primary:active {
+      background-color: #286090;
+      border-color: #204d74;
+      color: #fff; }
+  .button-success {
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+    color: #fff; }
+    .button-success:focus {
+      background-color: #449d44;
+      border-color: #255625;
+      color: #fff; }
+    .button-success:hover {
+      background-color: #449d44;
+      border-color: #398439;
+      color: #fff; }
+    .button-success:active {
+      background-color: #449d44;
+      border-color: #398439;
+      color: #fff; }
+  .button-lg {
+    padding: 10px, 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px; }
+  .button-sm {
+    padding: 5px, 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px; }
+  .button-xs {
+    padding: 1px, 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px; }
+
+/*# sourceMappingURL=style.css.map */
